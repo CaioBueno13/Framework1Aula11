@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/JS/jquery-3.6.0.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script language="Javascript" src="/JS/mercado.js"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/mercado.css">
+    <title>Supermercado</title>
+</head>
+<body>
+    <header>
+        <div class="Nome">
+            <p>Supermercado Central</p>
+        </div>
+
+        <div class="frase">
+            <span>Para um planeta melhor, informe a quantidade de itens comprados e a quantidade a ser dividida por sacola plastica.</span>
+        </div>
+
+        <div class="aviso">
+            <span>"Se algum dos itens abaixo não for comprado, digite 0 no espaço em branco"</span>
+        </div>
+    </header>
+    <br>
+
+    <div id="Quadro1">
+        <label>Informe a quantidade de itens secos a serem colocados por sacola:</label>
+        <input onclick="MudarCor(1)" type="text" name="secos" id="secos" ></input>
+        <label id="cha" onmouseover="MudarCor(1)" onmouseout="MudarCor(2)">Maximize o numero de itens por sacola</label>
+        <br>
+        <label>Informe a quantidade de itens secos a serem divididos nas sacola:</label>
+        <input type="text" name="divSecos" id="divSecos" placeholder="Quantidade de itens secos"></input>
+    </div>
+    
+    <div id="Quadro2">
+        <label>Informe a quantidade de itens molhados a serem colocados por sacola:</label>
+        <input onclick="MudarCor1(1)" onmouseover="MudarCor(2)" type="text" name="molhados" id="molhados" ></input>
+        <label id="cho" onmouseover="MudarCor1(1)" onmouseout="MudarCor1(2)">Maximize o numero de itens por sacola</label>
+        <br>
+        <label>Informe a quantidade de itens molhados a serem divididos nas sacola:</label>
+        <input type="text" name="divMolhados" id="divMolhados" placeholder="Quantidade de itens molhados"></input>
+    </div>
+    
+    <div id="Quadro3">
+        <label>Informe a quantidade de itens frageis a serem colocados por sacola:</label>
+        <input onclick="MudarCor2(1)" type="text" name="frageis" id="frageis"></input>
+        <label id="chu" onmouseover="MudarCor2(1)" onmouseout="MudarCor2(2)">Maximize o numero de itens por sacola</label>
+        <br>
+        <label>Informe a quantidade de itens frageis a serem divididos nas sacola:</label>
+        <input type="text" name="divFrageis" id="divFrageis" placeholder="Quantidade de itens frageis"></input>
+    </div>
+    <br>
+    <button onclick="Calculo()">Calcular</button>
+</body>
+</html>

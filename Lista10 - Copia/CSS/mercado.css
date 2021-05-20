@@ -1,0 +1,50 @@
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+.Nome{
+    text-align: center;
+    text-shadow: 2px 2px 2px;
+    font-size: 50px;
+    color: darkblue;
+    font-weight: bold;
+}
+.aviso{
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.frase{
+    text-shadow: 1px 1px 1px;
+    background-color: lightgray;
+    font-size: 15px;
+    border: solid black;
+    border-width: 2px;
+}
+
+#Quadro1{
+    background-color:  lightgray;
+    font-weight: bold;
+    border: solid black;
+    border-width: 2px;
+}
+
+#Quadro2{
+    background-color: lightgray;
+    font-weight: bold;
+    border: solid blue;
+    border-width: 2px;
+}
+
+#Quadro3{
+    background-color: lightgray;
+    font-weight: bold;
+    border: solid red;
+    border-width: 2px;
+}
+
+
+
+
+
